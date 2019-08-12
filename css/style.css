@@ -1,0 +1,566 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    background: #f2f2f2;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    max-width: 1980px;
+    margin: 0 auto;
+}
+
+.link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo {
+    width: 107px;
+}
+.header {
+    position: relative;
+}
+
+.header__main {
+    padding: 20px 8px;
+    min-height: 72px;
+    background: #ffffff;
+    box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
+}
+.header__main_wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__basket-icon {
+    display: none;
+}
+.header__authorization {
+    display: flex;
+    align-items: center;
+}
+.header__link {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    color: #1d1d1d;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    text-align: center;
+    padding: 13px;
+    flex: 1 0 40px;
+}
+.header__link:nth-child(2) {
+    background: #262626;
+    color: #ffffff;
+    margin-left: 12px;
+}
+.header__link:hover {
+    background: #262626;
+    color: #ffffff;
+}
+.header__search {
+    position: relative;
+    margin: 40px 8px;
+}
+.search__input {
+    outline: none;
+    background: none;
+    border: 0;
+    padding: 10px 10px 10px 32px;
+    border-bottom: 1px solid #75757591;
+    width: 100%;
+}
+
+.search__icon {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+
+.search__input::-moz-placeholder {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+    color: #626262;
+    opacity: 0.5;
+}
+
+.search__input::placeholder {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+    color: #626262;
+    opacity: 0.5;
+}
+
+.header__appointment {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 24px 8px;
+}
+.header__appointment__time {
+    flex: 0 1 65px;
+    margin-right: 16px;
+}
+.header__appointment__location {
+    flex: 0 1 227px;
+}
+.time__select {
+    padding: 5px;
+    text-align: center;
+    color: #1d1d1d;
+    font-size: 13px;
+    line-height: 24px;
+    width: 100%;
+    min-height: 40px;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    background: none;
+
+}
+.appointment__title {
+    color: #626262;
+    font-size: 11px;
+    line-height: 13px;
+    margin-bottom: 8px;
+}
+.location__input {
+    min-height: 40px;
+    width: 100%;
+    background: none;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    border-radius: 2px;
+    color: #1d1d1d;
+    font-size: 13px;
+    line-height: 24px;
+    padding-left: 35px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.location__form {
+    position: relative;
+}
+.location__icon {
+    position: absolute;
+    top: 11px;
+    left: 15px;
+    cursor: pointer;
+}
+.scroll-top {
+    display: none;
+    position: fixed;
+    bottom: 24px;
+    right: 16px;
+    width: 64px;
+    height: 64px;
+    border: 0;
+    background: rgba(89, 189, 91, 0.651);
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none;
+}
+.scroll-top:hover {
+    background: rgb(89, 189, 91);
+}
+.content {
+    margin: 40px 8px;
+    display: flex;
+    flex-direction: column;
+}
+.content__title {
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 14px;
+    font-size: 22px;
+    line-height: 34px;
+    color: #1d1d1d;
+    margin-left: 8px;
+}
+.restaurant__card {
+    flex: 1 1 356px;
+    display: flex;
+    flex-direction: column;
+    height: 366px;
+    margin-bottom: 36px;
+}
+.restaurant__title {
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1d1d1d;
+}
+
+.restaurant__img--mcdonalds {
+    height: 86%;
+    background: url(../img/mcdonalds.jpg);
+    background-size: cover;
+}
+.restaurant__img--wokwei {
+    height: 86%;
+    background: url(../img/wokwei.jpg);
+    background-size: cover;
+}
+.restaurant__img--yizha {
+    height: 86%;
+    background: url(../img/yizha.jpg);
+    background-size: cover;
+}
+.restaurant__img--musafir {
+    height: 86%;
+    background: url(../img/musafir.jpg);
+    background-size: cover;
+}
+.restaurant__img--tochka {
+    height: 86%;
+    background: url(../img/tochka.jpg);
+    background-size: cover;
+}
+.restaurant__img--cinnabon {
+    height: 86%;
+    background: url(../img/cinnabon.jpg);
+    background-size: cover;
+}
+.restaurant__img--mimoza {
+    height: 86%;
+    background: url(../img/mimoza.jpg);
+    background-size: cover;
+}
+.restaurant__img--tobe {
+    height: 86%;
+    background: url(../img/tobe.jpg);
+    background-size: cover;
+}
+.restaurant__img--druzi {
+    height: 86%;
+    background: url(../img/druzi.jpg);
+    background-size: cover;
+}
+
+.restaurant__category {
+    font-size: 14px;
+    line-height: 21px;
+    color: #626262;
+    margin-top: 14px;
+}
+.restaurant__time {
+    font-size: 13px;
+    line-height: 21px;
+    color: #1d1d1d;
+    margin-bottom: 32px;
+}
+
+.footer {
+    margin-top: 68px;
+    background: #262626;
+}
+.footer__content {
+    margin: 0 8px;
+    display: flex;
+    flex-direction: column;
+}
+.logo-bottom {
+    width: 192px;
+}
+.footer__top {
+    padding: 56px 0 40px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.footer__form {
+    position: relative;
+    margin: 32px 0;
+}
+
+.footer__select {
+    width: 173px;
+    height: 40px;
+    background: #3b3b3b;
+    border-radius: 2px;
+    border-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    padding-left: 48px;
+    cursor: pointer;
+}
+.footer__form::before {
+    content: "";
+    position: absolute;
+    left: 150px;
+    top: 11px;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    transform: rotate(-135deg);
+}
+.footer__form__icon {
+    position: absolute;
+    top: 11px;
+    left: 16px;
+}
+.middle__social__title {
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+.social_hash {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #49a144;
+}
+.social__icon {
+    width: 24px;
+}
+.footer__middle__social {
+    margin-bottom: 39px;
+}
+.middle__nav {
+    list-style: none;
+    padding-left: 0;
+    padding-bottom: 40px;
+}
+.nav__link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 15px;
+    color: #ffffff;
+    margin-bottom: 23px;
+}
+
+.nav__link:hover,
+.footer__bottom__information-link:hover {
+    color: #c5d6bf;
+}
+.footer__middle__store {
+    padding: 24px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+.store__app--store {
+    width: 107px;
+}
+.store__google--play {
+    width: 124px;
+}
+
+.footer__bottom {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    line-height: 13px;
+    color: #ffffff;
+}
+.footer__bottom__information-link {
+    text-decoration: none;
+    font-size: 11px;
+    line-height: 13px;
+    color: #ffffff;
+    margin-top: 24px;
+}
+@media (min-width: 700px) {
+    .header__appointment {
+        position: absolute;
+        top: 16px;
+        left: 136px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        margin: 0;
+    }
+    .appointment__title {
+        display: none;
+        margin-right: 10px;
+        margin-top: 11px;
+    }
+    .header__appointment__location {
+        display: flex;
+        align-items: center;
+        margin-left: -8px;
+    }
+    .location-title {
+        display: block;
+    }
+    .header__basket-icon {
+        display: block;
+        margin-left: 27px;
+        margin-right: 16px;
+    }
+
+    .restaurants {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin-top: 0;
+    }
+    .restaurant__card {
+        flex: 0 0 49%;
+    }
+
+    .restaurant__title {
+        margin-bottom: 16px;
+    }
+    .footer_middle {
+        display: flex;
+    }
+    .footer__middle__social-wrapper {
+        flex: 0 1 10%;
+    }
+    .footer__middle__nav {
+        flex: 1 1 auto;
+    }
+    .middle__nav {
+        border: 0;
+    }
+    .footer__middle__nav {
+        margin-left: 80px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 32px;
+    }
+    .footer__bottom {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    .footer__bottom__information,
+    .footer__bottom__information-link {
+        flex: 1 1 auto;
+        margin: 0;
+    }
+    .footer__middle__store {
+        justify-content: center;
+    }
+    .app--store__link {
+        margin-right: 40px;
+    }
+}
+
+@media (min-width: 900px) {
+    body {
+        background: #ffffff;
+    }
+    .restaurant__card {
+        flex: 0 0 32%;
+    }
+    .restaurant__card:hover {
+        background: #7575751a;
+        cursor: pointer;
+    }
+    .restaurant__img:hover {
+        transform: translateY(-4px);
+    }
+    .restaurant__img {
+        transition: transform 0.3s ease-out 0s;
+        border-radius: 4px;
+    }
+
+    .restaurants,
+    .content__title,
+    .header__search,
+    .header__main_wrapper,
+    .footer__content {
+        margin: 0 auto;
+        max-width: 1238px;
+        padding-left: 37px;
+        padding-right: 37px;
+    }
+    .restaurant__title {
+        margin-bottom: 16px;
+    }
+    .header__search {
+        margin-top: 40px;
+        margin-bottom: 36px;
+    }
+    .appointment__title {
+        font-size: 16px;
+        text-transform: lowercase;
+    }
+    .search__input {
+        font-size: 16px;
+    }
+
+    .header__main_wrapper {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__logo {
+        flex: 1 1 50%;
+    }
+
+    .header__appointment {
+        left: 27%;
+    }
+    .search__icon {
+        left: 37px;
+    }
+}
+.scroll-top {
+    display: none;
+    position: fixed;
+    bottom: 24px;
+    right: 16px;
+    width: 64px;
+    height: 64px;
+    border: 0;
+    background: rgba(89, 189, 91, 0.651);
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none;
+}
+.scroll-top:hover {
+    background: rgb(89, 189, 91);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
